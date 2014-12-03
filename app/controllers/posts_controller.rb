@@ -1,4 +1,9 @@
 class PostsController < ApplicationController
+  #GET /post
+  def index
+    @posts = Post.all
+  end
+
   # GET /posts/new
   def new
   end
